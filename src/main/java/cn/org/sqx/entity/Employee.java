@@ -2,8 +2,10 @@ package cn.org.sqx.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import java.io.Serializable;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDateTime;
 
 /**
@@ -11,8 +13,9 @@ import java.time.LocalDateTime;
  */
 
 @Data
-public class Employee implements Serializable {
-
+@NoArgsConstructor
+@AllArgsConstructor
+public class Employee {
     private static final long serialVersionUID = 1L;
 
     private Long id;
@@ -31,16 +34,13 @@ public class Employee implements Serializable {
 
     private Integer status;
 
-    @TableField(fill = FieldFill.INSERT) //插入时填充字段
     private LocalDateTime createTime;
 
-    @TableField(fill = FieldFill.INSERT_UPDATE) //插入和更新时填充字段
     private LocalDateTime updateTime;
 
-    @TableField(fill = FieldFill.INSERT) //插入时填充字段
+    @TableField(fill = FieldFill.INSERT)
     private Long createUser;
 
-    @TableField(fill = FieldFill.INSERT_UPDATE) //插入和更新时填充字段
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Long updateUser;
-
 }
