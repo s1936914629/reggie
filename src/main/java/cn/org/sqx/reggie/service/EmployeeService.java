@@ -1,11 +1,7 @@
-package cn.org.sqx.service;
+package cn.org.sqx.reggie.service;
 
-import cn.org.sqx.entity.Employee;
+import cn.org.sqx.reggie.entity.Employee;
 import com.baomidou.mybatisplus.extension.service.IService;
 
-/**
- * @author wff
- */
 public interface EmployeeService extends IService<Employee> {
-
 }

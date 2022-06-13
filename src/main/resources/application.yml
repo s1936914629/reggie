@@ -22,3 +22,5 @@ mybatis-plus:
     db-config:
       id-type: assign_id
 
+reggie:
+  path: F:\Java\study\selfStudy\HProcess\Project\reggie\src\main\resources\backend\img\

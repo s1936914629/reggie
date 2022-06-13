@@ -1,4 +1,4 @@
-package cn.org.sqx.common;
+package cn.org.sqx.reggie.common;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -52,4 +52,3 @@ public class JacksonObjectMapper extends ObjectMapper {
         this.registerModule(simpleModule);
     }
 }
-
