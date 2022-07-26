@@ -13,7 +13,7 @@ spring:
   redis:
     host: 124.220.169.221
     port: 6379
-    password: redis.123
+    password: redis.root
     database: 0
   cache:
     redis:
@@ -27,4 +27,5 @@ mybatis-plus:
     db-config:
       id-type: ASSIGN_ID
 reggie:
-  path: F:\Java\study\selfStudy\HProcess\Project\reggie\src\main\resources\backend\img\
+#  path: F:\Java\study\selfStudy\HProcess\Project\reggie\src\main\resources\backend\img\
+  path: /java/reggie/img/
